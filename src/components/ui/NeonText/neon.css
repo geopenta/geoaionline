@@ -1,0 +1,26 @@
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: 0.99;
+    filter: drop-shadow(0 0 2px rgba(147, 51, 234, 0.3))
+           drop-shadow(0 0 3px rgba(147, 51, 234, 0.2));
+  }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
+    filter: none;
+  }
+}
+
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 3px rgba(147, 51, 234, 0.3))
+           drop-shadow(0 0 4px rgba(147, 51, 234, 0.2));
+  }
+  50% {
+    filter: drop-shadow(0 0 4px rgba(147, 51, 234, 0.4))
+           drop-shadow(0 0 6px rgba(147, 51, 234, 0.3));
+  }
+  100% {
+    filter: drop-shadow(0 0 3px rgba(147, 51, 234, 0.3))
+           drop-shadow(0 0 4px rgba(147, 51, 234, 0.2));
+  }
+}
